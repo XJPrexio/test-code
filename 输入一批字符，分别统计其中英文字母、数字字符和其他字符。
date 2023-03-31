@@ -1,0 +1,9 @@
+		int Count1 = 0, Count2 = 0, Count3 = 0;
+		char ch;
+		while ((ch=getchar())!='\n')
+		{
+			if (ch >= 'A' && ch <= 'Z' || ch >= 'a' && ch <= 'z') Count1++;
+			else if (ch >= '0' && ch <= '9') Count2++;
+			else Count3++;
+		}
+		printf("%d,%d,%d\n",Count1, Count2, Count3);
