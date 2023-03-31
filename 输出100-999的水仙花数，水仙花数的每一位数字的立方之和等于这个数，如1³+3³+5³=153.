@@ -1,0 +1,13 @@
+		int i,result;
+		int a, b, c;
+		result = 0;
+		i = 100;
+		while (i<=999)
+		{
+			a = i / 100; //计算i的百位数字
+			b = (i / 10) % 10; //计算i的十位数字
+			c = i % 10; //计算i的个位数字
+			if (a * a * a + b * b * b + c * c * c == i)
+				printf("%d\n",i);
+			i++;
+		}
