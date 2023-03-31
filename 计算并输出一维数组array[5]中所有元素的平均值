@@ -1,0 +1,13 @@
+	int array[5];
+	int i;
+	int sum = 0;
+	float average;
+	for (i = 0; i < 5; i++)
+	{
+		scanf("%d", &array[i]);
+	}
+	for (i = 0; i < 5; i++) {
+		sum += array[i];
+	}
+	average = sum / 5;
+	printf("average=%f", average);
