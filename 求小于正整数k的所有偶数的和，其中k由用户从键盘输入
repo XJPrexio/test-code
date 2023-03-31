@@ -1,0 +1,11 @@
+		int k,i,result;
+		result = 0;
+		i = 0;
+		scanf("%d",&k);
+		while (i < k)
+		{
+			result = i + result;
+			i = i + 2;
+		}
+		printf("k=%d",result);
+		return 0;
