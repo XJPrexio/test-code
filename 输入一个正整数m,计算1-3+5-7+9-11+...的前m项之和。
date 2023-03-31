@@ -1,0 +1,14 @@
+		int m, result, sign;
+		int i;
+
+		scanf("%d", &m);
+		result = 0; 
+		sign = 1;
+		i = 1;
+		while (i<=m)
+		{
+			result += sign * (2 * i - 1);//符号项*通项
+			sign = -sign;//正负交替，每次循环更换正负号
+			i++;
+		}
+		printf("前m项的和为：%d", result);
