@@ -1,0 +1,13 @@
+		int m,i,sign,result;
+		result = 0;
+		i = 2;//起始为2
+		sign = 1;
+		scanf("%d",&m);
+		while (i<=m)
+		{
+			result += sign * i;
+			sign = -sign;//正负交替
+			i = i + 2;//偶数
+		}
+		printf("m=%d",result);
+		return 0;
